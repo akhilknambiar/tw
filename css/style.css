@@ -1031,3 +1031,11 @@ label.error {
     padding: 0;
     margin: 10px 0 0 0;
 }
+
+.whatsapp-chat i {
+    width: 70px;
+    position: fixed;
+    bottom: 110px;
+    right: 14px;
+    z-index: 9999;
+}
