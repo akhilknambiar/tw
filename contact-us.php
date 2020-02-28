@@ -68,7 +68,7 @@
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container text-nowrap">
             <div class="d-flex align-items-center w-100 col p-0">
-                <a class="navbar-brand rounded-bottom light-bg" href="index.html">
+                <a class="navbar-brand rounded-bottom light-bg" href="index.php">
                     <img alt="" src="images/logo_footer.png">
                 </a>
             </div>
@@ -95,13 +95,13 @@
                  id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About Us</a>
+                        <a class="nav-link" href="about-us.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact-us.html">Contact Us</a>
