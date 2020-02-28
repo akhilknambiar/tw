@@ -111,6 +111,7 @@
 <?php
 
 require 'email/phpmailer/PHPMailerAutoload.php';
+require_once 'credentials.php';
 if (isset($_POST['submit'])) {
 
 
@@ -172,23 +173,18 @@ if (isset($_POST['submit'])) {
 
     $mail->SMTPDebug = 2;
 
-    $mail->Host = 'mail.creativesat.com';
-
-    $mail->Port = 587;
-
+    $mail->Host = $host;
+    $mail->Port = $port;
     $mail->SMTPSecure = 'tls';
-
     $mail->SMTPAuth = true;
+    $mail->Username = $username;
+    $mail->Password = $password;
 
-    $mail->Username = 'works@creativesat.com';
+    $mail->setFrom($from, $from);
 
-    $mail->Password = 'aaa';
+    $mail->addReplyTo($from, 'Reply:', $from);
 
-    $mail->setFrom($email, $username);
-
-    $mail->addReplyTo($email, 'Reply:', $username);
-
-    $mail->addAddress('works.creatives@gmail.com');
+    $mail->addAddress($from);
 
     $mail->Subject = 'True Ways Cargo Transports L.L.C - Website Enquiry';
 
