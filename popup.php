@@ -169,7 +169,7 @@ if (isset($_POST['submit'])) {
 	</html>
 	";
 
-    $mail = new PHPMailer;
+    $mail = new PHPMailer(true);
 
     $mail->SMTPDebug = 2;
 
