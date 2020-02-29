@@ -191,6 +191,7 @@ if (isset($_POST['submit'])) {
 
     $mail->msgHTML($message);
 
+    echo($mail->send());
 
     if (!$mail->send()) {
         $error = "Mailer Error: " . $mail->ErrorInfo;
