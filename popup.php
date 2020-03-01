@@ -180,7 +180,7 @@ if (isset($_POST['submit'])) {
     try {
         // Specify the SMTP settings.
         $mail->isSMTP();
-        $mail->setFrom($sender, $senderName);
+        $mail->setFrom($from, "Trueways");
         $mail->Username = $username;
         $mail->Password = $password;
         $mail->Host = $host;
