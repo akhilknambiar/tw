@@ -110,7 +110,11 @@
 
 <?php
 
-require 'email/phpmailer/PHPMailerAutoload.php';
+
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'vendor/autoload.php';
 require_once 'credentials.php';
 if (isset($_POST['submit'])) {
 
@@ -169,36 +173,38 @@ if (isset($_POST['submit'])) {
 	</html>
 	";
 
+    $subject = 'True Ways Cargo Transports L.L.C - Website Enquiry';
+
     $mail = new PHPMailer(true);
 
-    $mail->SMTPDebug = 2;
+    try {
+        // Specify the SMTP settings.
+        $mail->isSMTP();
+        $mail->setFrom($sender, $senderName);
+        $mail->Username = $username;
+        $mail->Password = $password;
+        $mail->Host = $host;
+        $mail->Port = $port;
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'tls';
 
-    $mail->Host = $host;
-    $mail->Port = $port;
-    $mail->SMTPSecure = 'tls';
-    $mail->SMTPAuth = true;
-    $mail->Username = $username;
-    $mail->Password = $password;
+        $mail->addAddress($recipient);
 
-    $mail->setFrom($from, $from);
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+        if (!$mail->send()) {
+            $error = "Mailer Error: " . $mail->ErrorInfo;
+            ?>
+            <script>alert('<?php echo $error ?>');</script><?php
+        } else {
+            echo $status_message = "<br><br><p style=\"color:#049810 !important; font-size:16px; text-align: center;\">[ Thank you. Your information has been submitted. ]</p>";
+        }
 
-    $mail->addReplyTo($from, 'Reply:', $from);
-
-    $mail->addAddress($from);
-
-    $mail->Subject = 'True Ways Cargo Transports L.L.C - Website Enquiry';
-
-
-    $mail->msgHTML($message);
-
-    echo($mail->send());
-
-    if (!$mail->send()) {
-        $error = "Mailer Error: " . $mail->ErrorInfo;
-        ?>
-        <script>alert('<?php echo $error ?>');</script><?php
-    } else {
-        echo $status_message = "<br><br><p style=\"color:#049810 !important; font-size:16px; text-align: center;\">[ Thank you. Your information has been submitted. ]</p>";
+    } catch (phpmailerException $e) {
+        echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
+    } catch (Exception $e) {
+        echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
     }
 
 
