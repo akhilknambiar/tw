@@ -188,7 +188,7 @@ if (isset($_POST['submit'])) {
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
 
-        $mail->addAddress($recipient);
+        $mail->addAddress($from);
 
         $mail->isHTML(true);
         $mail->Subject = $subject;
