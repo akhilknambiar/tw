@@ -212,6 +212,7 @@
 
                             <form id="success" role="form" method="post" action="contact-us.php" class="wow fadeInUp"
                                   data-wow-delay="400ms" class="rounded-field">
+                                <input type="hidden" name="page_form" value="contact">
                                 <div class="form-row mb-4">
                                     <div class="col">
                                         <input class="form-control" name="name" placeholder="Your Name" type="text">

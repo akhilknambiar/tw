@@ -112,7 +112,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 require 'vendor/autoload.php';
 require_once 'credentials.php';
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit']) and !isset($_POST['page_form']) ) {
 
 
     $Freight_Package = $_POST['Freight_Package'];
