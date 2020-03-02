@@ -27,30 +27,26 @@
                                                 <select aria-invalid="false" aria-required="true" class="custom-select"
                                                         name="Freight_Package" required=""
                                                         title="Please choose a package">
-                                                    <option value="">Freight Type</option>
-                                                    <option value="Type 1">Type 1</option>
-                                                    <option value="Type 2">Type 2</option>
-                                                    <option value="Type 3">Type 3</option>
-                                                    <option value="Type 4">Type 4</option>
+                                                    <option value="">Type of freight</option>
+                                                    <option value="General Cargo">General Cargo</option>
+                                                    <option value="Dangerous Goods">Dangerous Goods</option>
+                                                    <option value="Perishable">Perishable</option>
+                                                    <option value="Pharmaceutical">Pharmaceutical</option>
+                                                    <option value="Vehicle">Vehicle</option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select aria-invalid="false" aria-required="true" class="custom-select"
-                                                        name="Incoterms" required="" title="Please choose a package">
-                                                    <option value="">Incoterms</option>
-                                                    <option value="Type 1">Type 1</option>
-                                                    <option value="Type 2">Type 2</option>
-                                                    <option value="Type 3">Type 3</option>
-                                                    <option value="Type 4">Type 4</option>
-                                                </select>
+                                                <div class="col">
+                                                    <input class="form-control" name="departure"
+                                                           placeholder="City of departure"
+                                                           type="text">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row mb-4">
-                                            <div class="col">
-                                                <input class="form-control" name="departure"
-                                                       placeholder="City of departure"
-                                                       type="text">
-                                            </div>
+                                            <input class="form-control" name="pieces"
+                                                   placeholder="Number of Pieces"
+                                                   type="number">
                                             <div class="col">
                                                 <input class="form-control" name="Delivery" placeholder="Delivery city"
                                                        type="text">
@@ -120,7 +116,7 @@ if (isset($_POST['submit'])) {
 
 
     $Freight_Package = $_POST['Freight_Package'];
-    $Incoterms = $_POST['Incoterms'];
+    $Incoterms = $_POST['pieces'];
     $departure = $_POST['departure'];
     $Delivery = $_POST['Delivery'];
     $weight = $_POST['weight'];
