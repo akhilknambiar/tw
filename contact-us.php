@@ -343,9 +343,6 @@
 
 <?php include('popup.php'); ?>
 
-<div class="whatsapp-chat">
-    <a href="https://wa.me/971508546481"><i class="icofont-whatsapp icofont-5x" style="color: green!important;"></i></a>
-</div>
 <!-- Back To Top Start -->
 <a class="off" href="#" id="mkdf-back-to-top"><i class="icofont-rounded-up"></i></a>
 <!-- Back To Top End -->

@@ -1,3 +1,8 @@
+
+<div class="whatsapp-chat">
+    <a href="https://wa.me/971508546481"><i class="icofont-whatsapp icofont-5x" style="color: green!important;"></i></a>
+</div>
+
 <!-- Request Modal -->
 <div aria-hidden="true" class="modal fade" id=request_popup role="dialog" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered request_popup" role="document">
