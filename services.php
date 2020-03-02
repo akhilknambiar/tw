@@ -260,7 +260,7 @@ Our Services include:<br>
 		  <br><br>
 1.	Provide the details: Submit the details of pick up, drop and description /dimensions of the cargo<br>
 2.	Receive best quote & pay: We will calculate an optimum rate and revert with the payment mode option.<br>
-3.	Real-time updates: Receive instant details and tracking shipment updates through online, e-mail & SMS notifications.<br><br>
+3.	Real-time updates: Receive instant details and tracking shipment updates through online, e-mail & SMS notifications.<br><br><br>
 
 </div>
           <div class="col-md-6 ml-auto">
@@ -270,7 +270,7 @@ Our Services include:<br>
                   <div class="icon-box-3 mb-5 bg-sky-blue">
                       <h4 class="h4-md" style="color: red">Catering to all points within UAE and specializing on the below routes</h4>
                         <div class="media">
-                            <div class="service-inner-content media-body"><br><br>
+                            <div class="service-inner-content media-body"><br>
                                 <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Dubai Cargo Village (DCV) </h4> <br>
                                 <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Dubai Cargo Village (DCV)</h4>  <br>
                                 <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Sharjah and Ajman (12 hours’ notice)</h4>  <br>
