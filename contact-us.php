@@ -222,31 +222,6 @@
                                 </div>
                                 <div class="form-row mb-4">
                                     <div class="col">
-                                        <select aria-invalid="false" aria-required="true" class="custom-select"
-                                                id="Transport_Package" name="Transport_Package" required=""
-                                                title="Please choose a package">
-                                            <option value="Transport Type">Transport Type</option>
-                                            <option value="Type 1">Type 1</option>
-                                            <option value="Type 2">Type 2</option>
-                                            <option value="Type 3">Type 3</option>
-                                            <option value="Type 4">Type 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col">
-                                        <select aria-invalid="false" aria-required="true" class="custom-select"
-                                                id="Freight_Package" name="Freight_Package" required=""
-                                                title="Please choose a package">
-                                            <option value="">Type of freight</option>
-                                            <option value="General Cargo">General Cargo</option>
-                                            <option value="Dangerous Goods">Dangerous Goods</option>
-                                            <option value="Perishable">Perishable</option>
-                                            <option value="Pharmaceutical">Pharmaceutical</option>
-                                            <option value="Vehicle">Vehicle</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mb-4">
-                                    <div class="col">
                                         <textarea class="form-control" name="message" placeholder="Message"
                                                   rows="7"></textarea>
                                     </div>
@@ -262,14 +237,15 @@
 
                             <?php
 
-                            require 'email/phpmailer/PHPMailerAutoload.php';
+                            use PHPMailer\PHPMailer\PHPMailer;
+
+                            require 'vendor/autoload.php';
+                            require_once 'credentials.php';
                             if (isset($_POST['submit'])) {
 
 
                                 $name = $_POST['name'];
                                 $email = $_POST['email'];
-                                $Transport_Package = $_POST['Transport_Package'];
-                                $Freight_Package = $_POST['Freight_Package'];
                                 $msg = $_POST['message'];
 
                                 $message = "
@@ -283,15 +259,11 @@
 	<tr style='background: #159eda; color:#fff;'>
 	<th style='padding: 10px 30px;'>Name</th>
 	<th style='padding: 10px 30px;'>Email</th>
-	<th style='padding: 10px 30px;'>Transport Package</th>
-	<th style='padding: 10px 30px;'>Freight Package</th>
 	<th style='padding: 10px 30px;'>Message</th>
 	</tr>
 	<tr style='background: #e8e6e6;'>
 	<td style='padding: 10px 30px;'>$name</td>
 	<td style='padding: 10px 30px;'>$email</td>
-	<td style='padding: 10px 30px;'>$Transport_Package</td>
-	<td style='padding: 10px 30px;'>$Freight_Package</td>
 	<td style='padding: 10px 30px;'>$msg</td>
 	</tr>
 	</table>
@@ -299,44 +271,43 @@
 	</html>
 	";
 
-                                $mail = new PHPMailer;
+                                $subject = 'True Ways Cargo Transports L.L.C - Contact US';
 
-                                //$mail->isSMTP();
+                                $mail = new PHPMailer(true);
 
-                                $mail->SMTPDebug = 2;
+                                try {
+                                    // Specify the SMTP settings.
+                                    $mail->isSMTP();
+                                    $mail->setFrom($from, "Trueways");
+                                    $mail->Username = $username;
+                                    $mail->Password = $password;
+                                    $mail->Host = $host;
+                                    $mail->Port = $port;
+                                    $mail->SMTPAuth = true;
+                                    $mail->SMTPSecure = 'tls';
 
-                                $mail->Host = 'mail.creativesat.com';
+                                    $mail->addAddress($from);
 
-                                $mail->Port = 587;
+                                    $mail->isHTML(true);
+                                    $mail->Subject = $subject;
+                                    $mail->Body = $message;
 
-                                $mail->SMTPSecure = 'tls';
+                                    if (!$mail->send()) {
+                                        $error = "Mailer Error: " . $mail->ErrorInfo;
+                                        ?>
+                                        <script>alert('<?php echo $error ?>');</script><?php
+                                    } else {
+                                        //echo '<script>alert("Message sent!");</script>';
+                                        echo $status_message = "<br><br><p style=\"color:#049810 !important; font-size:16px; text-align: center;\">[ Thank you. Your information has been submitted. ]</p>";
+                                    }
 
-                                $mail->SMTPAuth = true;
 
-                                $mail->Username = 'works@creativesat.com';
-
-                                $mail->Password = 'aaa';
-
-                                $mail->setFrom($email, $username);
-
-                                $mail->addReplyTo($email, 'Reply:', $username);
-
-                                $mail->addAddress('works.creatives@gmail.com');
-                                $mail->Subject = 'True Ways Cargo Transports L.L.C - Website Enquiry';
-                                $mail->msgHTML($message);
-
-                                if (!$mail->send()) {
-                                    $error = "Mailer Error: " . $mail->ErrorInfo;
-                                    ?>
-                                    <script>alert('<?php echo $error ?>');</script><?php
-                                } else {
-                                    //echo '<script>alert("Message sent!");</script>';
-                                    echo $status_message = "<br><br><p style=\"color:#049810 !important; font-size:16px; text-align: center;\">[ Thank you. Your information has been submitted. ]</p>";
+                                } catch (phpmailerException $e) {
+                                    echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
+                                } catch (Exception $e) {
+                                    echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
                                 }
-
-
                             }
-
                             ?>
 
 

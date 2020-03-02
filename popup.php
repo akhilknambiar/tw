@@ -169,7 +169,7 @@ if (isset($_POST['submit'])) {
 	</html>
 	";
 
-    $subject = 'True Ways Cargo Transports L.L.C - Website Enquiry';
+    $subject = 'True Ways Cargo Transports L.L.C - Quote';
 
     $mail = new PHPMailer(true);
 
