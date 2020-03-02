@@ -36,11 +36,9 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <div class="col">
                                                     <input class="form-control" name="departure"
                                                            placeholder="City of departure"
                                                            type="text">
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row mb-4">
@@ -138,7 +136,7 @@ if (isset($_POST['submit'])) {
 	<table>
 	<tr style='background: #159eda; color:#fff;'>
 	<th style='padding: 10px 30px;'>Freight Package</th>
-	<th style='padding: 10px 30px;'>Incoterms</th>
+	<th style='padding: 10px 30px;'>Number of Pieces</th>
 	<th style='padding: 10px 30px;'>City of Departure</th>
 	<th style='padding: 10px 30px;'>Delivery City</th>
 	<th style='padding: 10px 30px;'>Total Gross Weight</th>
