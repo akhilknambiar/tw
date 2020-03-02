@@ -44,9 +44,11 @@
                                             </div>
                                         </div>
                                         <div class="form-row mb-4">
-                                            <input class="form-control" name="pieces"
-                                                   placeholder="Number of Pieces"
-                                                   type="number">
+                                            <div class="col">
+                                                <input class="form-control" name="pieces"
+                                                       placeholder="Number of Pieces"
+                                                       type="number">
+                                            </div>
                                             <div class="col">
                                                 <input class="form-control" name="Delivery" placeholder="Delivery city"
                                                        type="text">
