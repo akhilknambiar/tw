@@ -104,7 +104,7 @@
                         <a class="nav-link" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        <a class="nav-link" href="contact-us.php">Contact Us</a>
                     </li>
                 </ul>
                 <!-- Main Navigation End -->
@@ -210,7 +210,7 @@
                         <div class="free-quote-form contact-page-option wow fadeInLeft" data-wow-delay="0s"
                              data-wow-duration="0">
 
-                            <form id="success" role="form" method="post" action="contact-us" class="wow fadeInUp"
+                            <form id="success" role="form" method="post" action="contact-us.php" class="wow fadeInUp"
                                   data-wow-delay="400ms" class="rounded-field">
                                 <div class="form-row mb-4">
                                     <div class="col">
