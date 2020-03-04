@@ -33,30 +33,31 @@
     <div class="loader-item">
       <div class="loader">
         <div class="spin"></div>
-        <div class="bounce"></div>
+          <div class="bounce"></div>
       </div>
     </div>
   </div>
   <!-- Page loader End -->
 
   <header class="fixed-top header-fullpage top-border top-transparent wow fadeInDown">
-    <div class="top-bar-right d-flex align-items-center text-md-left">
-      <div class="container">
-        <div class="row align-items-center p-2">
-<!--          <div class="col">-->
-<!--            <i class="icofont-google-"></i>  Office No. 30, Nasser Lootah Airport Building-->
-<!--          </div>-->
-          <div class="col-md-auto">
+      <div class="top-bar-right d-flex align-items-center text-md-left">
+          <div class="container">
+              <div class="row align-items-center p-2">
+                  <div class="col">
+                      <i class="icofont-google-"></i>Office No.30, Nasser Lootah Airport Building, Near Dubai Cargo
+                      Village
+                  </div>
+                  <div class="col-md-auto">
 
-            <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 2087614">+971 4 2087614</a></span>
+                      <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 2087614">+971 4 2087614</a></span>
 
-            <span class="mr-3"><i class="icofont-ui-email"></i> <a href="mailto:sales@truewayslogistics.com">sales@truewayslogistics.com</a></span>        
+                      <span class="mr-3"><i class="icofont-ui-email"></i> <a href="mailto:sales@truewayslogistics.com">sales@truewayslogistics.com</a></span>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-    
-    <!-- Main Navigation Start -->
+
+      <!-- Main Navigation Start -->
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container text-nowrap">
         <div class="d-flex align-items-center w-100 col p-0">

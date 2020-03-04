@@ -43,9 +43,9 @@
     <div class="top-bar-right d-flex align-items-center text-md-left">
       <div class="container">
         <div class="row align-items-center p-2">
-<!--          <div class="col">-->
-<!--            <i class="icofont-google-"></i>  Office No. 30, Nasser Lootah Airport Building-->
-<!--          </div>-->
+          <div class="col">
+            <i class="icofont-google-"></i>Office No.30, Nasser Lootah Airport Building, Near Dubai Cargo
+          </div>
           <div class="col-md-auto">
 
             <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 2087614">+971 4 2087614</a></span>
