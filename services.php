@@ -102,17 +102,7 @@
   <!-- Page Breadcrumbs Start -->
   <div class="slider bg-navy-blue bg-scroll pos-rel breadcrumbs-page">
     <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#"><i class="icofont-home"></i></a></li> 
-          <li class="breadcrumb-item active" aria-current="page">Services</li>
-        </ol>
-      </nav>  
-
       <h1>Our Services</h1>
-      <div class="breadcrumbs-description">
-        True Ways Cargo Transports L.L.C
-      </div>
     </div>
   </div>
   <!-- Page Breadcrumbs End -->

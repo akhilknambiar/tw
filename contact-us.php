@@ -117,17 +117,7 @@
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-scroll pos-rel breadcrumbs-page">
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#"><i class="icofont-home"></i></a></li>
-                <li aria-current="page" class="breadcrumb-item active">Contact Us</li>
-            </ol>
-        </nav>
-
         <h1>Contact Us</h1>
-        <div class="breadcrumbs-description">
-            True Ways Cargo Transports L.L.C
-        </div>
     </div>
 </div>
 <!-- Page Breadcrumbs End -->
@@ -298,7 +288,6 @@
                                         ?>
                                         <script>alert('<?php echo $error ?>');</script><?php
                                     } else {
-                                        //echo '<script>alert("Message sent!");</script>';
                                         echo $status_message = "<br><br><p style=\"color:#049810 !important; font-size:16px; text-align: center;\">[ Thank you. Your information has been submitted. ]</p>";
                                     }
 
