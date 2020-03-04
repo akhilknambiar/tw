@@ -220,8 +220,7 @@
                                 <div class="form-row text-center">
 
                                     <button class="form-btn mx-auto btn-theme bg-orange" id="contactoption"
-                                            name="contactoption"
-                                            type="submit" name="submit">Submit Now <i
+                                            type="submit" name="contact-submit">Submit Now <i
                                                 class="icofont-rounded-right"></i></button>
                                 </div>
                             </form>
@@ -232,7 +231,7 @@
 
                             require 'vendor/autoload.php';
                             require_once 'credentials.php';
-                            if (isset($_POST['submit'])) {
+                            if (isset($_POST['contact-submit'])) {
 
 
                                 $name = $_POST['name'];
