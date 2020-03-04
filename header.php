@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center p-2">
                 <div class="col">
-                    <i class="icofont-google-"></i>Office No.30, Nasser Lootah Airport Building, Near Dubai Cargo
+                    <i class="icofont-google-"></i>Office No.30, Nasser Lootah Airport Building, Near Dubai Cargo Village
                 </div>
                 <div class="col-md-auto">
 
