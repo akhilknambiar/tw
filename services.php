@@ -50,7 +50,7 @@
                   <div class="col-md-auto">
 
                       <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 2087614">+971 4 2087614</a></span>
-
+                      <div class="clearfix"></div>
                       <span class="mr-3"><a href="mailto:sales@truewayslogistics.com"><i class="icofont-ui-email"></i> sales@truewayslogistics.com</a></span>
                   </div>
               </div>
@@ -58,9 +58,9 @@
       </div>
 
       <!-- Main Navigation Start -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container text-nowrap">
-        <div class="d-flex align-items-center w-100 col p-0">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container text-nowrap">
+              <div class="d-flex align-items-center w-100 col p-0">
           <a class="navbar-brand rounded-bottom light-bg" href="index.php">
             <img src="images/logo_footer.png" alt="">
           </a> 
