@@ -204,10 +204,10 @@ Our Services include:<br>
                         <div class="media">
                             <div class="service-inner-content media-body"><br>
                                 <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Dubai Cargo Village (DCV) </h4> <br>
-                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Dubai Cargo Village (DCV)</h4>  <br>
-                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Sharjah and Ajman (12 hours’ notice)</h4>  <br>
-                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Umm Al Quwain and Ras Al Khaimah (12 hours’ notice)</h4>  <br>
-                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Abu Dhabi and Fujairah (24 hours’ notice)</h4>  <br>
+                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Jebel Ali Free Zone (JAFZA)</h4> <br>
+                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Sharjah and Ajman (12 hours’ notice)</h4> <br>
+                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Umm Al Quwain and Ras Al Khaimah (12 hours’ notice)</h4> <br>
+                                <h4 class="h4-xs"><i class="icofont-shield"></i>Pick and Drop from/to Abu Dhabi and Fujairah (24 hours’ notice)</h4> <br>
                             </div>
                         </div>
                   </div>
