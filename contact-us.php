@@ -100,8 +100,8 @@
                             <span>
 				True Ways Cargo Transports L.L.C<br>
 				Office No. 301-15<br>
-				Al Nisf Building,<br>
-				Airport Road, Dubai, U.A.E
+				Al Nisf Building, Airport Road,<br>
+				Opposite to Dubai Cargo Village, Dubai, U.A.E
 				</span>
                         </div>
                         <h4>Office Timings </h4>

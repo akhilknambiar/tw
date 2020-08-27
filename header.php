@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center p-2">
                 <div class="col">
-                    <i class="icofont-google-"></i>Office No. 301-15, Al Nisf Building, Airport Road, Dubai, U.A.E
+                    <i class="icofont-google-"></i>Office No. 301-15, Al Nisf Building, Airport Road, Opposite to Dubai Cargo Village, Dubai, U.A.E
                 </div>
                 <div class="col-md-auto">
 
