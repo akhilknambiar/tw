@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row align-items-center p-2">
                 <div class="col">
-                    <i class="icofont-google-"></i>Office No.30, Nasser Lootah Airport Building, Near Dubai Cargo Village
+                    <i class="icofont-google-"></i>Office No. 301-15, Al Nisf Building, Airport Road, Dubai, U.A.E
                 </div>
                 <div class="col-md-auto">
 
-                    <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 2087614">+971 4 2087614</a></span>
+                    <span class="mr-3"><i class="icofont-ui-touch-phone"></i> <a href="tel:+971 4 3343441">+971 4 3343441</a></span>
                     <div class="clearfix"></div>
                     <span class="mr-3"><a href="mailto:sales@truewayslogistics.com"><i class="icofont-ui-email"></i> sales@truewayslogistics.com</a></span>
                 </div>

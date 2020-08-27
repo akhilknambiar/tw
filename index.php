@@ -58,8 +58,8 @@
           <div class="col d-flex">
             <div class="top-text d-none">
                 <small class="txt-sky-blue">Address</small>
-                Office No. 30, Nasser Lootah Airport Building,<br>
-Near Dubai Cargo Village, Dubai, U.A.E
+                Office No. 301-15, Al Nisf Building, <br>
+Airport Road, Dubai, U.A.E
 
             </div>            
             <div class="top-text">
@@ -68,7 +68,7 @@ Near Dubai Cargo Village, Dubai, U.A.E
             </div>
             <div class="top-text">
                 <small class="txt-sky-blue">Phone Number</small>
-                <a href="tel:+971 4 2087614">+971 4 2087614</a>
+                <a href="tel:+971 4 3343441">+971 4 3343441</a>
             </div>        
           </div>
           <div class="col-md-auto">

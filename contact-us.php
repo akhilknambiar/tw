@@ -99,9 +99,9 @@
                             <i class="icofont-google-"></i>
                             <span>
 				True Ways Cargo Transports L.L.C<br>
-				Office No. 30, Nasser Lootah Airport Building,<br>
-				Dubai International Airport Road – Terminal 1<br>
-				Near Dubai Cargo Village, Dubai, U.A.E
+				Office No. 301-15<br>
+				Al Nisf Building,<br>
+				Airport Road, Dubai, U.A.E
 				</span>
                         </div>
                         <h4>Office Timings </h4>
@@ -114,7 +114,7 @@
 				</span>
                         </div>
                         <div class="d-flex align-items-start items">
-                            <i class="icofont-telephone"></i> <span><a href="tel:+971 4 2087614">+971 4 2087614</a></span>
+                            <i class="icofont-telephone"></i> <span><a href="tel:+971 4 3343441">+971 4 3343441</a></span>
                         </div>
                         <div class="d-flex align-items-start items">
                             <i class="icofont-email"></i> <a href="mailto:sales@truewayslogistics.com">sales@truewayslogistics.com</a>
